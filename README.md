@@ -1,7 +1,7 @@
 # CrashCatch
 iOS crash 闪退拦截
 方法比较粗鲁 使用runtime处理以下crash 可能会导致闪退的情况
-使用cateGory+NSOobject 分别实现了NSArray，NSMutableArry,NSString,NSMutableString,NSDictionary
+使用cateGory+NSOobject 分别实现了UNrecognizeSelector,NSArray，NSMutableArry,NSString,NSMutableString,NSDictionary
 NStimer,KVO ,KVC 等场景，可以扩展其他可能造成闪退的情况
 
 上线后可开启捕获crashlog输出，同步服务器或者第三方bug统计平台
