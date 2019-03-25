@@ -31,7 +31,7 @@
 }
 
 + (void)load{
-    [self openArrCP];
+//    [self openArrCP];
 }
 
 - (void)crashMsg:(NSString*)errorMsg{

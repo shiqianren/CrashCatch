@@ -7,13 +7,19 @@
 //
 
 #import "RSManager.h"
+#import "NSObject+UnrecognizeSelector.h"
+#import "NSObject+Arr.h"
+#import "NSObject+Str.h"
+#import "NSObject+Dict.h"
+#import "NSObject+NSTimer.h"
+#import "NSObject+NotiAndKvo.h"
 
 @implementation RSCatchConfig
 
 - (instancetype)initDefault{
     if (self = [super init]) {
-        self.isDebug = NO;
-        self.openLog = NO;
+        self.isDebug = YES;
+        self.openLog = YES;
         self.style = CrashProtectorAll;
     }
     return self;
@@ -43,7 +49,12 @@
     
 }
 - (void)start{
-    
+    [NSObject openTimerCP];
+    [NSObject openStrCP];
+    [NSObject openDictCP];
+    [NSObject openCP];
+    [NSObject openArrCP];
+    [NSObject openNotiAndKvoCP];
 }
 - (void)stop{
     

@@ -7,7 +7,6 @@
 //
 
 #import "TestUnrecoginzedVC.h"
-#import "NSObject+Arr.h"
 @interface TestUnrecoginzedVC ()
 
 @end
@@ -18,7 +17,6 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 //    [self unrecoginzedVC];
-    [NSObject openArrCP];
     [self arrayCrash];
     
     // Do any additional setup after loading the view.

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TestUnrecoginzedVC.h"
+#import "RSManager.h"
 @interface AppDelegate ()
 
 @end
@@ -21,7 +22,9 @@
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[TestUnrecoginzedVC new]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
+    RSCatchConfig *config = [RSCatchConfig new];
+    [[RSManager instance] initWithConfig:config];
+    [[RSManager instance] start];
     return YES;
 }
 
